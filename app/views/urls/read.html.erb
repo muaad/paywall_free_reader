@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-8">
+      <% cache params[:url] do %>
+      	<% @paragraphs.each do |paragraph| %>
+      		<p><%= paragraph %></p>
+      	<% end %>
+      <% end %>
+    </div>
+    <div class="col-3">
+    </div>
+</div>
