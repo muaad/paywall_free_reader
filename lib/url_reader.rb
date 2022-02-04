@@ -8,11 +8,11 @@ class UrlReader
 	def get_page_text
 		begin
 			page = @agent.get(@url)
-			text = page.search('p').collect { |p| p.text }
+			paragraphs = page.search('p').collect { |p| p.text }
 		rescue StandardError => e
 			puts e
-			text = ''
+			paragraphs = []
 		end
-		text
+		paragraphs
 	end
 end
