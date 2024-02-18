@@ -2,6 +2,6 @@ require "url_reader"
 
 class UrlsController < ApplicationController
   def read
-    @paragraphs = UrlReader.new(params[:url]).get_page_text
+    @content = UrlReader.new(params[:url]).extract_main_content
   end
 end

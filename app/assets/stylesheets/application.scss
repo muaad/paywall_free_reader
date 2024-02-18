@@ -11,7 +11,43 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
  *= require_self
  */
 
 @import "bootstrap";
+
+body {
+	background-color: #121212;
+	color: #fff;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+header, .container {
+	background-color: #1e1e1e;
+}
+
+.app-container {
+	padding: 60px 20px;
+	margin-top: 100px;
+	font-size: 18px;
+}
+
+input[type="search"] {
+	background-color: #333;
+	color: #fff;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #333;
+}
+
+a {
+	color: orangered;
+}

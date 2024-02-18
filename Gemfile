@@ -50,6 +50,9 @@ gem "bootsnap", require: false
 
 gem 'mechanize'
 gem 'bootstrap'
+gem "ruby-readability", :require => 'readability'
+gem "fastimage"
+gem "font-awesome-rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
