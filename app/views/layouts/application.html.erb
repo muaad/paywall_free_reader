@@ -56,6 +56,19 @@
             window.location.href = newUrl;
           }
         });
+
+        var images = document.querySelectorAll('img');
+
+        // Iterate over each image element
+        images.forEach(function(image) {
+          // Get the current src attribute value
+          var src = image.getAttribute('src');
+
+          // Check if the src attribute doesn't already start with "http://" or "https://"
+          if (src && !src.startsWith('http://') && !src.startsWith('https://')) {
+            // Prepend the host to the src attribute
+            image.setAttribute('src', host + src);
+          }
       });
     </script>
   </body>

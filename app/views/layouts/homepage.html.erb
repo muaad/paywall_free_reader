@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paywall-Free Reader</title>
+  <%= csrf_meta_tags %>
+	<%= csp_meta_tag %>
+
+	<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+	<%= javascript_importmap_tags %>
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero-section {
+      background-color: #007bff;
+      color: #fff;
+      padding: 100px 0;
+    }
+    .feature-icon {
+      font-size: 3rem;
+      color: #007bff;
+    }
+    .feature-title {
+      margin-top: 20px;
+    }
+    .centered-section {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 mb-4">Unlock Unlimited Access to Online Content</h1>
+      <p class="lead mb-5">Say goodbye to paywalls and enjoy seamless browsing of articles, news, and more with Paywall-Free Reader.</p>
+      <a href="#" class="btn btn-light btn-lg">Install Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-5">Key Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-lock-open feature-icon mb-3"></i>
+          <h3 class="feature-title">Bypass Paywalls</h3>
+          <p>Access articles and news without interruptions by bypassing paywalls on supported websites.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-globe feature-icon mb-3"></i>
+          <h3 class="feature-title">Unrestricted Browsing</h3>
+          <p>Enjoy unrestricted access to online content without any limitations.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-check feature-icon mb-3"></i>
+          <h3 class="feature-title">Simple and Easy-to-Use</h3>
+          <p>Install Paywall-Free Reader with a click and start browsing seamlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Centered Section -->
+  <section class="centered-section text-center">
+    <div class="container">
+      <h2 class="mb-4">Install Paywall-Free Reader Now</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input id="searchInput" type="search" class="form-control form-control-lg" placeholder="Enter URL here..." aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-primary btn-lg" type="button">Go</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-0">© 2024 Paywall-Free Reader. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
