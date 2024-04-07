@@ -2,6 +2,17 @@
     <div class="col-2">
     </div>
     <div class="col-md-8 col-sm-12">
+        <% if params[:url].present? %>
+            <div class="row">
+                <div class="col-12">
+                    <a class="btn btn-info" href="https://webcache.googleusercontent.com/search?q=cache:<%= params[:url] %>" target="_blank">
+                        <i class="fa fa-google"></i>
+                        Get From Google Cache
+                    </a>
+                </div>
+            </div>
+            <br>
+        <% end %>
     	<%= raw(@content) %>
     </div>
     <div class="col-2">
