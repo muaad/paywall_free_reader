@@ -39,12 +39,6 @@
           this.select();
         });
 
-        const images = document.querySelectorAll('img');
-
-        images.forEach(function(image) {
-          image.classList.add('img-fluid');
-        });
-
         document.body.addEventListener('click', function(event) {
           if (event.target.tagName === 'A') {
             event.preventDefault();
@@ -57,18 +51,17 @@
           }
         });
 
-        var images = document.querySelectorAll('img');
+        const images = document.querySelectorAll('img');
 
-        // Iterate over each image element
         images.forEach(function(image) {
-          // Get the current src attribute value
+          image.classList.add('img-fluid');
+
           var src = image.getAttribute('src');
 
-          // Check if the src attribute doesn't already start with "http://" or "https://"
           if (src && !src.startsWith('http://') && !src.startsWith('https://')) {
-            // Prepend the host to the src attribute
             image.setAttribute('src', host + src);
           }
+        });
       });
     </script>
   </body>
