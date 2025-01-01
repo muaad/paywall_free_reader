@@ -5,10 +5,10 @@
         <% if params[:url].present? %>
             <div class="row">
                 <div class="col-12">
-                    <a class="btn btn-info" href="https://webcache.googleusercontent.com/search?q=cache:<%= params[:url] %>" target="_blank">
+                    <button class="btn btn-info" href="https://webcache.googleusercontent.com/search?q=cache:<%= params[:url] %>" target="_blank" onclick="window.open(this.getAttribute('href'), '_blank')">
                         <i class="fa fa-google"></i>
                         Get From Google Cache
-                    </a>
+                    </button>
                 </div>
             </div>
             <br>
